@@ -1,0 +1,823 @@
+
+/*
+10px = 0.8vh => 1px = 0.08vh
+10px = 0.4vw => 1px = 0.04vw
+ */
+#MarketBackground{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 46.875vw;
+  height: 37%;
+  left: 3.75%;
+  top: 15.4%;
+
+  background: rgba(255, 0, 0, 0.13);
+  border: 0.13vw solid #FF0000;
+  border-radius: 0px 0px 5vw 0px;
+}
+#BankBackground{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 46.875vw;
+  height: 37%;
+  left: 50.6vw;
+  top: 15.4%;
+
+  background: rgba(0, 255, 25, 0.13);
+  border: 0.13vw solid #00FF19;
+  border-radius: 0px 0px 0px 5vw;
+}
+#PlayerBackground{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 46.875vw;
+  height: 37%;
+  left: 3.75%;
+  top: 52.45%;
+
+  background: rgba(0, 209, 255, 0.13);
+  border: 0.13vw solid #00D1FF;
+  border-radius: 0px 5vw 0px 0px;
+}
+#TravelBackground{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 46.875vw;
+  height: 37%;
+  left: 50.6vw;
+  top: 52.45%;
+
+  background: rgba(173, 0, 255, 0.13);
+  border: 0.13vw solid #AD00FF;
+  border-radius: 5vw 0px 0px 0px;
+}
+#TitleBackground{
+  position: absolute;
+  width: 15.3vw;
+  height: 4.5vh;
+  left: 0.7vw;
+  top: 2vh;
+
+  background: #C4C4C4;
+  border-radius: 0px 5vw;
+}
+#TitleText{
+  position: absolute;
+  width: 14.12vw;
+  height: 2.72vh;
+  left: 33px;
+  top: 13px;
+
+  font-family: 'Loved by the King', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.12vh;
+  line-height: 8.8vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #04BED8;
+}
+#TitleText_C{
+  position: absolute;
+  width: 14.12vw;
+  height: 2.72vh;
+  left: 2.24vw;
+  top: 0.8vh;
+
+  font-family: Papyrus, fantasy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.12vh;
+  line-height: 8.8vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #04BED8;
+}
+#TitleText_and{
+  position: absolute;
+  width: 14.12vw;
+  height: 2.72vh;
+  left: 3.24vw;
+  top: 0.8vh;
+
+  font-family: Papyrus, fantasy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.84vh;
+  line-height: 6.64vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+#TitleText_y{
+  position: absolute;
+  width: 14.12vw;
+  height: 2.72vh;
+  left: 6vw;
+  top: 0.8vh;
+
+  font-family: Papyrus, fantasy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.68vh;
+  line-height: 13.28vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #BA0101;
+}
+#TitleText_L{
+  position: absolute;
+  width: 14.12vw;
+  height: 2.72vh;
+  left: 8.68vw;
+  top: -0.4vh;
+
+  font-family: Papyrus, fantasy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.68vh;
+  line-height: 13.28vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #AD00C9;
+}
+#TitleText_ord{
+  position: absolute;
+  width: 14.12vw;
+  height: 2.72vh;
+  left: 9.5vw;
+  top: 0.8vh;
+
+  font-family: Papyrus, fantasy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.84vh;
+  line-height: 6.64vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+#Title{
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: 1vw;
+  top: 2vw;
+}
+#actionButton{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:47.75vh;
+  left: 44.7vw;
+  width: 12vw;
+  font-size: 3vh;
+  height: 8vh;
+  background: rgba(255,0,122,1);
+  border-radius: 5vw;
+}
+#marketButton{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:24.5vh;
+  left: 38.7vw;
+  width: 6vw;
+  font-size: 3vh;
+  height: 8vh;
+  background: #FFFFFF;
+  border-radius: 5vw;
+}
+#sellBuyBackground{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  left: 8vw;
+  top: 8vh;
+
+  background: #79003c;
+  border: 0.13vw solid #999999;
+  border-radius: 5vw;
+  visibility: visible;
+}
+#buyLabel{
+  position: absolute;
+  top:1vh;
+  left: 3vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#buySelect{
+  position: absolute;
+  top:4.9vh;
+  left: 3vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 0vw 5vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#buyAmountArea{
+  position: absolute;
+  top:10vh;
+  left: 3vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 5vh;
+}
+#sellLabel{
+  position: absolute;
+  top:1vh;
+  left: 16vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#sellSelect{
+  position: absolute;
+  top:4.9vh;
+  left: 16vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 0vw 5vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#sellAmountArea{
+  position: absolute;
+  top:10vh;
+  left: 16vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 5vh;
+}
+#marketSellButton{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:17.5vh;
+  left: 38.7vw;
+  width: 6vw;
+  font-size: 3vh;
+  height: 8vh;
+  background: #FFFFFF;
+  border-radius: 5vw;
+  visibility: hidden;
+}
+#marketBuyButton{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:26.5vh;
+  left: 34.7vw;
+  width: 6vw;
+  font-size: 3vh;
+  height: 8vh;
+  background: #FFFFFF;
+  border-radius: 5vw;
+  visibility: hidden;
+}
+#travelLabel{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:3.5vh;
+  left: 2vw;
+  width: 6vw;
+  font-size: 3vh;
+  height: 8vh;
+  text-align: center;
+  line-height: 7.5vh;
+  border: 2px solid #222222;
+  border-radius: 5vw;
+}
+#bankButton{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:24.5vh;
+  left: 2vw;
+  width: 6vw;
+  font-size: 3vh;
+  height: 8vh;
+  background: #FFFFFF;
+  border-radius: 5vw;
+}
+#takeStoreBackground{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  left: 8vw;
+  top: 8vh;
+
+  background: #00790b;
+  border: 0.13vw solid #999999;
+  border-radius: 5vw;
+  visibility: visible;
+}
+#moneySelect{
+  position: absolute;
+  top:5.1vh;
+  left: 3vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 0vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#moneyAmountArea{
+  position: absolute;
+  top:9vh;
+  left: 3vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 5vh;
+  resize: none;
+}
+#candyTakeStoreSelect{
+  position: absolute;
+  top:5.1vh;
+  left: 16vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 0vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#candySelect{
+  position: absolute;
+  top:9vh;
+  left: 16vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#candyAmountArea{
+  position: absolute;
+  top:12.9vh;
+  left: 16vw;
+  width: 11vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 5vh;
+  resize: none;
+}
+#menuButton{
+  position: absolute;
+  font-family: Papyrus, fantasy;
+  top:3.5vh;
+  left: 38.7vw;
+  width: 6vw;
+  font-size: 3vh;
+  height: 8vh;
+  background: #FFFFFF;
+  border-radius: 5vw;
+}
+
+#marketTable{
+  position: absolute;
+  top:1vh;
+  left: 4vw;
+  width: 30.875vw;
+  font-size: 2vh;
+  height: 34vh;
+}
+#bankTable{
+  position: absolute;
+  top:1vh;
+  left: 20vw;
+  width: 30.875vw;
+  font-size: 2vh;
+  height: 34vh;
+}
+#bankMoney{
+  position: absolute;
+  top:7vh;
+  left: 2vw;
+  width: 8vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw;
+  font-size: 2.5vh;
+  background: #00fdff;
+  height: 4vh;
+}
+#bankDebt{
+  position: absolute;
+  top:17.9vh;
+  left: 8vw;
+  width: 8vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw;
+  font-size: 2.5vh;
+  background: #00fdff;
+  height: 4vh;
+}
+#bankDebtLabel{
+  position: absolute;
+  top:14vh;
+  left: 9vw;
+  width: 6vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#bankMoneyLabel{
+  position: absolute;
+  top:3.1vh;
+  left: 3vw;
+  width: 6vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+#BRONX{
+  position: absolute;
+  top:3vh;
+  left: 11vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;;
+}
+#GHETTO{
+  position: absolute;
+  top:3vh;
+  left: 23vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#CENTRAL{
+  position: absolute;
+  top:3vh;
+  left: 35vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#MANHATTAN{
+  position: absolute;
+  top:18vh;
+  left: 35vw;
+  width: 10vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#CONEY_ISLAND{
+  position: absolute;
+  top:18vh;
+  left: 18vw;
+  width: 12vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#BROOKLYN{
+  position: absolute;
+  top:18vh;
+  left: 5vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#bronxCost{
+  position: absolute;
+  top: 7.9vh;
+  left: 11vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#ghettoCost{
+  position: absolute;
+  top:7.9vh;
+  left: 23vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#centralCost{
+  position: absolute;
+  top:7.9vh;
+  left: 35vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#manhattanCost{
+  position: absolute;
+  top:22.9vh;
+  left: 35vw;
+  width: 10vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#coneyIslandCost{
+  position: absolute;
+  top:22.9vh;
+  left: 18vw;
+  width: 12vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#brooklynCost{
+  position: absolute;
+  top:22.9vh;
+  left: 5vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#marketBonbonLabel{
+  position: absolute;
+  top:3vh;
+  left: 6vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#marketBonbon{
+  position: absolute;
+  top:7.9vh;
+  left: 6vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#marketChocolateLabel{
+  position: absolute;
+  top:3vh;
+  left: 18vw;
+  width: 9vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#marketChocolate{
+  position: absolute;
+  top:7.9vh;
+  left: 18vw;
+  width: 9vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#marketGumLabel{
+  position: absolute;
+  top:3vh;
+  left: 31vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#marketGum{
+  position: absolute;
+  top:7.9vh;
+  left: 31vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#marketChipsLabel{
+  position: absolute;
+  top:18vh;
+  left: 28vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#marketChips{
+  position: absolute;
+  top:22.9vh;
+  left: 28vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#marketJellyLabel{
+  position: absolute;
+  top:18vh;
+  left: 16.8vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#marketJelly{
+  position: absolute;
+  top:22.9vh;
+  left: 16.8vw;
+  width: 8vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#marketShowerRodLabel{
+  position: absolute;
+  top:18vh;
+  left: 1.5vw;
+  width: 12vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  height: 5vh;
+}
+#marketShowerRod{
+  position: absolute;
+  top:22.9vh;
+  left: 1.5vw;
+  width: 12vw;
+  font-size: 3vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 0vw 0vw 5vw 5vw;
+  height: 5vh;
+}
+#playerTable{
+  position: absolute;
+  top:1vh;
+  left: 4vw;
+  width: 30.875vw;
+  font-size: 2vh;
+  height: 34vh;
+}
+#playerMoney{
+  position: absolute;
+  top:15.89vh;
+  left: 30.7vw;
+  width: 8vw;
+  font-size: 2.5vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw;
+  background: yellow;
+  height: 4vh;
+}
+#playerCity{
+  position: absolute;
+  top:27.89vh;
+  left: 34.7vw;
+  width: 10vw;
+  text-align: center;
+  font-size: 2.5vh;
+  border: 2px solid #222222;
+  border-radius: 5vw;
+  background: yellow;
+  height: 4vh;
+}
+#playerCityLabel{
+  position: absolute;
+  top:24vh;
+  left: 36.7vw;
+  width: 6vw;
+  text-align: center;
+  font-size: 2.5vh;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  background: orange;
+  height: 4vh;
+}
+#playerMoneyLabel{
+  position: absolute;
+  top:12vh;
+  left: 31.7vw;
+  width: 6vw;
+  font-size: 2.5vh;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 5vw 5vw 0vw 0vw;
+  background: orange;
+  height: 4vh;
+}
+#dayLabel{
+  position: absolute;
+  top:49.7vh;
+  left: 49.3vw;
+  width: 2.5vw;
+  text-align: center;
+  border: 2px solid #222222;
+  border-radius: 10vw;
+  font-size: 2.5vh;
+  background: #00D1FF;
+  height: 4vh;
+}
+

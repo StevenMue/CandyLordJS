@@ -1,0 +1,264 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/CandyLord.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title></title>
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div id="Title">
+    <label id="TitleBackground">
+      <label id="TitleText_C">C</label>
+      <label id="TitleText_and">and</label>
+      <label id="TitleText_y">y</label>
+      <label id="TitleText_L">L</label>
+      <label id="TitleText_ord">ord</label>
+    </label>
+  </div>
+  <div class="container">
+  <div class="row">
+  <div class="col" id="MarketBackground">
+    <button id="marketButton">Market
+    </button>
+    <div id="marketLabels">
+    <button id="marketSellButton">Sell</button>
+    <button id="marketBuyButton">Buy</button>
+    <label id="marketBonbonLabel">Bonbon</label>
+    <label id="marketChocolateLabel">Chocolate</label>
+    <label id="marketGumLabel">Gum</label>
+    <label id="marketChipsLabel">Chips</label>
+    <label id="marketJellyLabel">Jelly</label>
+    <label id="marketShowerRodLabel">ShowerRod</label>
+    <label id="marketBonbon">0€</label>
+    <label id="marketChocolate">0€</label>
+    <label id="marketGum">0€</label>
+    <label id="marketChips">0€</label>
+    <label id="marketJelly">0€</label>
+    <label id="marketShowerRod">0€</label>
+    </div>
+    <div id="takeStoreBackground">
+      <select id="moneySelect">
+        <option value="STORE">Store Money</option>
+        <option value="TAKE">Take Money</option>
+      </select>
+      <textarea id="moneyAmountArea">Amount</textarea>
+      <select id="candyTakeStoreSelect">
+        <option value="STORE">Store Candy</option>
+        <option value="TAKE">Take Candy</option>
+      </select>
+      <select id="candySelect">
+        <option value="BONBON">Bonbon</option>
+        <option value="CHOCOLATE">Chocolate</option>
+        <option value="GUM">Gum</option>
+        <option value="CHIPS">Chips</option>
+        <option value="JELLY">Jelly</option>
+        <option value="SHOWER_ROD">Shower Rod</option>
+      </select>
+      <textarea id="candyAmountArea">Amount</textarea>
+    </div>
+  </div>
+  <div class="col" id="BankBackground">
+    <button id="bankButton">Bank
+    </button>
+    <table  id="bankTable">
+      <thead>
+      <tr>
+        <th>
+          Candy
+        </th>
+        <th>
+          Amount
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          Bonbon
+        </td>
+        <td id="BankBONBON">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Chocolate
+        </td>
+        <td id="BankCHOCOLATE">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Gum
+        </td>
+        <td id="BankGUM">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Chips
+        </td>
+        <td id="BankCHIPS">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jelly
+        </td>
+        <td id="BankJELLY">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Shower Rod
+        </td>
+        <td id="BankSHOWER_ROD">
+          -
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <label id="bankMoneyLabel">Money</label>
+    <!-- <label id="bankDebtLabel">Debt</label> -->
+    <label id="bankMoney">0€</label>
+    <!-- <label id="bankDebt">0€</label> -->
+    <div id="sellBuyBackground">
+      <label id="buyLabel">Buy</label>
+      <select id="buySelect">
+        <option value="BONBON">Bonbon</option>
+        <option value="CHOCOLATE">Chocolate</option>
+        <option value="GUM">Gum</option>
+        <option value="CHIPS">Chips</option>
+        <option value="JELLY">Jelly</option>
+        <option value="SHOWER_ROD">Shower Rod</option>
+      </select>
+      <textarea id="buyAmountArea">Amount</textarea>
+      <label id="sellLabel">Sell</label>
+      <select id="sellSelect">
+        <option value="BONBON">Bonbon</option>
+        <option value="CHOCOLATE">Chocolate</option>
+        <option value="GUM">Gum</option>
+        <option value="CHIPS">Chips</option>
+        <option value="JELLY">Jelly</option>
+        <option value="SHOWER_ROD">Shower Rod</option>
+      </select>
+      <textarea id="sellAmountArea">Amount</textarea>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col" id="PlayerBackground">
+    <button id="menuButton">Menu
+    </button>
+    <table  id="playerTable">
+      <thead>
+      <tr>
+        <th>
+          Candy
+        </th>
+        <th>
+          Amount
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          Bonbon
+        </td>
+        <td id="PlayerBONBON">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Chocolate
+        </td>
+        <td id="PlayerCHOCOLATE">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Gum
+        </td>
+        <td id="PlayerGUM">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Chips
+        </td>
+        <td id="PlayerCHIPS">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jelly
+        </td>
+        <td id="PlayerJELLY">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Shower Rod
+        </td>
+        <td id="PlayerSHOWER_ROD">
+          -
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <label id="playerMoneyLabel">Money</label>
+    <label id="playerCityLabel">City</label>
+    <label id="playerMoney">0€</label>
+    <label id="playerCity">CONEY_ISLAND</label>
+  </div>
+  <div class="col" id="TravelBackground">
+    <label id="travelLabel">Travel
+    </label>
+    <button id="BRONX">Bronx</button>
+    <button id="GHETTO">Ghetto</button>
+    <button id="CENTRAL">Central</button>
+    <button id="MANHATTAN">Manhattan</button>
+    <button id="CONEY_ISLAND">Coney Island</button>
+    <button id="BROOKLYN">Brooklyn</button>
+    <label id="bronxCost">0€</label>
+    <label id="ghettoCost">0€</label>
+    <label id="centralCost">0€</label>
+    <label id="manhattanCost">0€</label>
+    <label id="coneyIslandCost">0€</label>
+    <label id="brooklynCost">0€</label>
+  </div>
+  </div>
+    <label id="dayLabel">0</label>
+    <button id="actionButton">ACTION</button>
+  </div>
+
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+   <script type="module" src="js/main.mjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
